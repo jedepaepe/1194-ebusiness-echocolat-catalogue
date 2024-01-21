@@ -14,12 +14,16 @@ public class Article {
     private String description;
     private double price;
     private String unit;
+    private String label;
+    private double priceReduction;
 
-    public Article(String name, String description, double price, String unit) {
+    public Article(String name, String description, double price, String unit, String label, double priceReduction) {
         this.name = name;
         this.description = description;
         this.price = price;
         this.unit = unit;
+        this.label = label;
+        this.priceReduction = priceReduction;
     }
 
     public Article() {
@@ -63,5 +67,21 @@ public class Article {
 
     public void setUnit(String unit) {
         this.unit = unit;
+    }
+
+    public String getLabel() {
+        return label;
+    }
+
+    public void setLabel(String label) {
+        this.label = label;
+    }
+
+    public double getPriceReduction() {
+        return priceReduction;
+    }
+
+    public void setPriceReduction(double priceReduction) {
+        this.priceReduction = priceReduction;
     }
 }

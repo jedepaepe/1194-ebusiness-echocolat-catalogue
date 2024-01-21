@@ -16,8 +16,8 @@ public class LoadDatabase {
     CommandLineRunner initDatabase(ArticleRepository repository) {
         return args -> {
             log.info("creating data");
-            repository.save(new Article("rasoir", "super rasoir", 22.11, "pièce"));
-            repository.save(new Article("robe de soirée", "...", 87.99, "pièce"));
+            repository.save(new Article("rasoir", "super rasoir", 22.11, "pièce", "A202", 2.03));
+            repository.save(new Article("robe de soirée", "...", 87.99, "pièce", "ZZ1", 20.42));
         };
     }
 }
